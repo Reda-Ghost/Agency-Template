@@ -46,7 +46,7 @@
     display: none;
   }
   .header .container .mobile-nav {
-    padding-top: 30px;
+    padding-top: 90px;
     height: 100vh;
     text-align: center;
     width: 100%;
@@ -218,7 +218,7 @@
     grid-template-columns: repeat(auto-fill , minmax(320px,auto));
   }
   .blog .container .grid-container .grid-1 .col {
-    width: 370px;
+    width: 100%;
     height: 280px;
     margin: 0 auto;
   }

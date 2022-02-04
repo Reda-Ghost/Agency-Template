@@ -85,7 +85,7 @@ $(document).ready(function () {
       scrollingTop.fadeOut(600);
     }
     scrollingTop.click(function() {
-      $(window).scrollTop($("#home").offset().top -= 250)
+      $(window).scrollTop($("#home").offset().top -= 300)
     })
   })
 });

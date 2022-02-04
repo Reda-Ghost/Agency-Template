@@ -655,8 +655,8 @@ a {
   width: 30px;
   height: 30px;
   position: fixed;
-  bottom: 5%;
-  right: 5%;
+  bottom: 3%;
+  right: 9%;
   background-color: var(--colorTWo);
   align-items: center;
   justify-content: center;

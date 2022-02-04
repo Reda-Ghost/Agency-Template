@@ -191,7 +191,7 @@
   }
   .portfolio .container .grid-imgs .img {
     margin: 0 auto;
-    width: 400px
+    width: 100%;
   }
   .portfolio .container .grid-imgs .img div {
     display: none;

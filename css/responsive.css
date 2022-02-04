@@ -154,7 +154,7 @@
     position: relative;
   }
   .about .container {
-    grid-template-columns: repeat(auto-fill,minmax(320px, auto));
+    grid-template-columns: repeat(auto-fill,minmax(280px, auto));
     row-gap: 80px;
 }
   .about .container .img-container {
@@ -187,7 +187,7 @@
     line-height: 1.5;
   }
   .portfolio .container .grid-imgs {
-    grid-template-columns: repeat(auto-fill, minmax(320px , auto));
+    grid-template-columns: repeat(auto-fill, minmax(280px , auto));
   }
   .portfolio .container .grid-imgs .img {
     margin: 0 auto;
@@ -215,7 +215,7 @@
     display: none;
   }
   .blog .container .grid-container .grid-1 {
-    grid-template-columns: repeat(auto-fill , minmax(320px,auto));
+    grid-template-columns: repeat(auto-fill , minmax(280px,auto));
   }
   .blog .container .grid-container .grid-1 .col {
     width: 100%;

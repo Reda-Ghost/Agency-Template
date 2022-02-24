@@ -98,16 +98,25 @@ $(document).ready(function () {
   })
 
   // input plugins
-  $('.info-contact input, .text textarea').one('keydown',
-  function(e) {
-    // condition user must click a letter or number
-    // letter or number buttons with keycode condition
-    $(this).val('' + e.key.slice(1))
-  })
-  $('.info-contact input, .text textarea').on('blur' , function(){
-    if($(this).val().length == 0) {
-      $(this).val($(this).data('default'));
+  // $('.info-contact input, .text textarea').one('keydown',
+  // function(e) {
+  //   // condition user must click a letter or number
+  //   // letter or number buttons with keycode condition
+  //   $(this).val('' + e.key.slice(1))
+  // })
+  $('.info-contact input, .text textarea').on({
+    focus : function(){
+      $(this).val('')
+    },
+    blur : function(){
+      if($(this).val().length == 0) {
+        $(this).val($(this).data('default'));
+      }
     }
+  })
+  // remove default event of anchors
+  $('a').click(function(e){
+    e.preventDefault()
   })
 });
 

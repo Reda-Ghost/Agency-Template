@@ -452,6 +452,13 @@ a {
   background-color: white;
   height: 315px;
 }
+.blog .container .grid-container .grid-1 .col:not(:first-of-type):hover {
+  background-color: #314584;
+}
+.blog .container .grid-container .grid-1 .col:not(:first-of-type):hover h3 ,
+.blog .container .grid-container .grid-1 .col:not(:first-of-type):hover p {
+  color: white;
+}
 .blog .container .grid-container .grid-1 .col h3 {
   color: var(--colorOne);
   font-weight: 600;

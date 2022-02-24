@@ -3,6 +3,12 @@ $(document).ready(function () {
   // click Menu Button to show Mobile Nav Menu
   $(".menu-btn").on("click", function(){
       $(".mobile-nav").toggleClass("right")
+      // if((".mobile-nav").has('.right')){
+      //   $(this).children('.fa-bars').fadeIn(500)
+      // }
+      // else {
+      //   $(this).children('.fa-times').fadeIn(500)
+      // }
   });
 
   // add shadow on scroll Nav Mobile
@@ -46,17 +52,19 @@ $(document).ready(function () {
   $(".mobile-nav ul li").click(function() {
     $(".mobile-nav li").removeClass("active");
     $(this).addClass("active");
+    $(this).parents('.mobile-nav').toggleClass('right')
+    // condition check if menu-btn has class times to remove it
+    if ($('.menu-btn').has("i.fa-times")) {
+      $(".menu-btn i").removeClass('fa-times').addClass('fa-bars')
+    }
+    
   });
 
   // toggle icon Menu in menu btn
-  $(".header .menu-btn .fa-bars").click(function(){
-    $(this).fadeOut();
-    $(".header .menu-btn .fa-times").fadeIn();
+  $(".header .menu-btn i").click(function(){
+    $(this).toggleClass("fa-bars fa-times")
   })
-  $(".header .menu-btn .fa-times").click(function(){
-    $(this).fadeOut();
-    $(".header .menu-btn .fa-bars").fadeIn();
-  })
+  
 
   // all scrolling works here
   $(window).scroll(function() {
@@ -87,6 +95,19 @@ $(document).ready(function () {
     scrollingTop.click(function() {
       $(window).scrollTop($("#home").offset().top -= 300)
     })
+  })
+
+  // input plugins
+  $('.info-contact input, .text textarea').one('keydown',
+  function(e) {
+    // condition user must click a letter or number
+    // letter or number buttons with keycode condition
+    $(this).val('' + e.key.slice(1))
+  })
+  $('.info-contact input, .text textarea').on('blur' , function(){
+    if($(this).val().length == 0) {
+      $(this).val($(this).data('default'));
+    }
   })
 });
 

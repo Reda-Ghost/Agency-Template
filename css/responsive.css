@@ -29,6 +29,9 @@
     background: white;
     margin: 0 auto;
   }
+  .header .flex-bar .container {
+    width: 100%;
+  }
   .header .flex-bar .menu-btn {
     display: block;
     position: relative;

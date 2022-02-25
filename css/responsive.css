@@ -11,18 +11,17 @@
     height: 480px;
     margin-top: -80px;
   }
-  .header .container {
+  .header {
     position: relative;
   }
   .header .img-logo {
     height: 30px;
   }
-  .header .container .flex-bar {
+  .header .flex-bar {
     display: flex;
     height: 65px;
     position: fixed;
     width: 100%;
-    padding: 0 50px;
     top: 0;
     z-index: 2;
     right: 0;
@@ -30,14 +29,14 @@
     background: white;
     margin: 0 auto;
   }
-  .header .container .flex-bar .menu-btn {
+  .header .flex-bar .menu-btn {
     display: block;
     position: relative;
     width: 22px;
     height: 29px;
     user-select: none;
   }
-  .header .container .flex-bar .menu-btn i{
+  .header .flex-bar .menu-btn i{
     position: absolute;
     left: 0;
     right: 0;
@@ -48,7 +47,7 @@
   .header .flex-bar .contact-btn {
     display: none;
   }
-  .header .container .mobile-nav {
+  .header .mobile-nav {
     padding-top: 90px;
     height: 100vh;
     text-align: center;
@@ -67,24 +66,24 @@
   .right {
     right: 0% !important;
   }
-  .header .container .mobile-nav ul{
+  .header .mobile-nav ul{
     list-style: none;
     padding: 0;
     margin-top: 30px;
   }
-  .header .container .mobile-nav ul li:not(:last-of-type) {
+  .header .mobile-nav ul li:not(:last-of-type) {
     margin-bottom: 40px;
   }
-  .header .container .mobile-nav ul li:first-of-type a{
+  .header .mobile-nav ul li:first-of-type a{
     color: var(--colorTWo);
   }
-  .header .container .mobile-nav ul li a{
+  .header .mobile-nav ul li a{
     padding: 20px;
     color: var(--colorOne);
     font-size: 25px;
     font-weight: 600;
   }
-  .header .container .mobile-nav ul li a:hover{
+  .header .mobile-nav ul li a:hover{
     color: var(--colorTWo);
   }
   .header .home-content {
@@ -440,7 +439,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 /* start Header */
 @media (min-width : 992px) {
-  .header .container .mobile-nav {
+  .header .mobile-nav {
     display: none;
   }
   /* start scroll to top */
